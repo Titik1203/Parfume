@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMIÈRE | Luxury Perfume</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="#" class="logo">LUMIÈRE<span>.</span></a>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#bestseller">Best Seller</a>
+            <a href="#products">Collection</a>
+            <a href="#about">About Us</a>
+        </div>
+
+        <button class="cart-btn" onclick="toggleCart()">
+            🛍 Bag <span id="cart-count">0</span>
+        </button>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content reveal">
+            <span class="subtitle">DISCOVER YOUR SIGNATURE SCENT</span>
+
+            <h1>Elegance in<br>
+                Every <span>Drop.</span>
+            </h1>
+
+            <p>
+                Temukan aroma istimewa yang menggambarkan
+                kepribadianmu. Wewangian mewah untuk setiap
+                momen berharga dalam hidupmu.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#products" class="primary-btn">Explore Collection ↗</a>
+                <a href="#about" class="secondary-btn">Discover More</a>
+            </div>
+
+            <div class="hero-info">
+                <div>
+                    <h3>10+</h3>
+                    <span>Exclusive Scents</span>
+                </div>
+                <div>
+                    <h3>100%</h3>
+                    <span>Premium Quality</span>
+                </div>
+                <div>
+                    <h3>4.9★</h3>
+                    <span>Customer Rating</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="circle-bg"></div>
+
+            <div class="sparkle sparkle1">✦</div>
+            <div class="sparkle sparkle2">✧</div>
+            <div class="sparkle sparkle3">✦</div>
+
+            <div class="hero-bottle">
+                <img
+                    src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=700"
+                    alt="Luxury perfume">
+            </div>
+
+            <div class="floating-text">
+                <span>✧</span> THE ART OF FRAGRANCE
+            </div>
+        </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee">
+        <div class="marquee-track">
+            <span>✦ LUXURY FRAGRANCE</span>
+            <span>✦ ELEGANT EXPERIENCE</span>
+            <span>✦ YOUR SIGNATURE SCENT</span>
+            <span>✦ LUXURY FRAGRANCE</span>
+            <span>✦ ELEGANT EXPERIENCE</span>
+            <span>✦ YOUR SIGNATURE SCENT</span>
+        </div>
+    </div>
+
+    <!-- BEST SELLER -->
+    <section class="section" id="bestseller">
+
+        <div class="section-heading reveal">
+            <span class="subtitle">OUR FAVORITES</span>
+            <h2>Best Seller <span>Collection</span></h2>
+            <p>Empat aroma favorit yang paling dicintai.</p>
+        </div>
+
+        <div class="product-grid" id="bestSellerGrid"></div>
+
+    </section>
+
+    <!-- ALL PRODUCTS -->
+    <section class="section products-section" id="products">
+
+        <div class="section-heading reveal">
+            <span class="subtitle">FIND YOUR SCENT</span>
+            <h2>Our <span>Collection</span></h2>
+            <p>Discover a fragrance that tells your story.</p>
+        </div>
+
+        <div class="filter-buttons">
+            <button class="filter active" onclick="filterProducts('all', this)">All Products</button>
+            <button class="filter" onclick="filterProducts('women', this)">For Her</button>
+            <button class="filter" onclick="filterProducts('men', this)">For Him</button>
+            <button class="filter" onclick="filterProducts('unisex', this)">Unisex</button>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+
+    </section>
+
+    <!-- PROMO -->
+    <section class="promo-section">
+        <div class="promo-content reveal">
+            <span>THE PERFECT GIFT</span>
+            <h2>A Fragrance<br>Made for <i>You.</i></h2>
+            <p>
+                Karena setiap orang memiliki cerita,
+                dan setiap cerita layak memiliki aroma istimewa.
+            </p>
+            <a href="#products" class="primary-btn">Shop Now ↗</a>
+        </div>
+
+        <div class="promo-image">
+            <img
+                src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=900"
+                alt="Perfume collection">
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
+        <div class="about-image reveal">
+            <img
+                src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=800"
+                alt="Luxury perfume">
+        </div>
+
+        <div class="about-content reveal">
+            <span class="subtitle">OUR PHILOSOPHY</span>
+            <h2>More Than Just<br><i>A Fragrance.</i></h2>
+            <p>
+                LUMIÈRE hadir untuk menghadirkan pengalaman
+                wewangian yang lebih dari sekadar aroma.
+                Kami percaya bahwa parfum adalah bagian
+                dari identitas, kenangan, dan kepercayaan diri.
+            </p>
+            <p>
+                Setiap tetes adalah cerita.
+                Setiap aroma adalah ekspresi.
+            </p>
+            <a href="#products" class="text-link">Explore Our Story ↗</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">LUMIÈRE<span>.</span></div>
+        <p>Elegance in Every Drop.</p>
+
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">TikTok</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="copyright">
+            © 2026 LUMIÈRE PERFUME. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- CART SIDEBAR -->
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>Your Shopping Bag</h2>
+            <button onclick="toggleCart()">✕</button>
+        </div>
+
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Your bag is still empty ♡</p>
+        </div>
+
+        <div class="cart-footer">
+            <div class="total">
+                <span>Total</span>
+                <strong id="cartTotal">Rp 0</strong>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">
+                Checkout Now ↗
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
